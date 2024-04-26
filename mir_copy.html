@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="MIR REPORT">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="OTSi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>MIR Report</title>
+    <style>
+      .odd-row {
+          background-color: #bdd6ee;  /* Background color for odd rows */
+          color: #000000;
+      }
+      .even-row {
+          background-color: #dfeaf6;  /* Background color for even rows */
+          color: #000000;
+      }
+  </style>
+</head>
+
+<body class="a4" style=" font-family: 'Open Sans', sans-serif;">
+    <!-- <img src="img/bg-image.png" width="100%"/> -->
+    <div style="width: 100%">
+        <img src="img/bg-image.png" width="100%"/>
+        <p style="margin-top:-15px;text-align: center;color:#448231; font-weight: bolder ;font-size: 48px;">MARKET <br> INTELLIGENCE REPORT</p>
+        <p style="margin-top:-50px;text-align: center;color:#093F7C; font-weight: bolder ;font-size: 54px;margin-bottom: 0px;">RICE</p>
+        <p style="margin-top:-5px;text-align: center;color:#093F7C; font-weight: 600;font-size: 20px;">{{published_date}}</p>
+    </div>
+    <div style="background-color: #093F7C;text-align: center;font-size: 18px;color:#fff;padding: 10px;width: 100%;font-weight: normal;">ES&E Division, Department of Agriculture & Farmer Welfare <br> Ministry of Agriculture & Farmers Welfare</div>
+    <div style="margin: 40px 29% !important;page-break-after: always;"><img src="img/svg/p1_footerlogo.svg" width="500px"/></div>
+    
+        
+        <!-- <div style="background-color:#f6f6f6;position: relative;z-index: -1;height:220vh"> -->
+    <div style="display: inline-block;">
+       
+        <div style="width:100%;">
+            <img src="img/svg/Intersection.svg" style="width:24em"/>
+            <div style="
+           font-size: 26px;
+    letter-spacing: 0px;
+    color: #b2d2f7;
+    position: relative;
+    margin-top: -270px;
+    margin-left: 20px;
+    width: 300px;
+    font-weight: bolder;">MARKET<br> INTELLIGENCE REPORT</div>
+            <img src="img/rice.png" alt="Rice" style="position: relative;
+            top: 1em;
+            right: -1.5em;
+            z-index: 999;"/>
+            <div style="
+            font-size: 28px;
+          
+            letter-spacing: 0px;
+            color: #fb9d1c;
+            text-transform: uppercase;
+            opacity: 1;
+            position: relative;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-top: 25px;">rice</div>
+            <div style=" 
+            font-size: 14px;
+            font-family: 'Open Sans';
+            letter-spacing: 0px;
+            color: #B2D2F7;
+            margin-top: 2px;
+            margin-left: 21px;
+            position: relative;
+            top: -52%;">{{published_date}}</div>
+        </div>
+        <div style="display:inline-block;">
+           
+                <span style="   position: relative;
+                font-size: 24px;
+                font-family: 'Open Sans';
+                color: #093f7c;
+                left: 18em;
+                top: -12.5em;
+                font-weight: bold;">Overview</span>
+           
+    </div>
+        <div style="display: inline-block;
+        width: auto;
+        position: relative;
+        top: -9em;
+        left: 16em;
+        z-index: -1;">
+        
+        <div style="display: inline-block;
+        width: 20em;
+        height: 8em;
+        background-color: #FF7B00;
+        text-align: center;
+        position: relative;
+        right: 55px;
+        top: -1.4em;">
+            <span style="font-size: 24px;font-family: 'Open Sans';color:#fff;font-weight: bold;">{{kpis['crop_production']['value']}}</span><br>
+            <span style="font-size: 12px;font-family: 'Open Sans';color:#fff;">{{kpis['crop_production']['uom']}}</span><br>
+            <span style="font-size: 12px;font-family: 'Open Sans';color:#000000;font-weight: bold;">PRODUCTION</span><br>
+            <span style="font-size: 10px;font-family: 'Open Sans';color:#000000;">{{kpis['crop_production']['context']}}</span>
+        </div>
+            
+             <div style="display: inline-block;
+             width: 230px;
+             height: 8em;
+             background-color: #FF9500;
+             text-align: center;
+             position: relative;
+             top: -2.8em;
+             right: 60px;">
+                <span style="font-size: 24px;font-family: 'Open Sans';color:#fff;font-weight: bold;">{{kpis['cfpi']['value']}}</span><br>
+            <span style="font-size: 12px;font-family: 'Open Sans';color:#fff;">{{kpis['cfpi']['uom']}}</span><br>
+            <span style="font-size: 12px;font-family: 'Open Sans';color:#000000;font-weight: bold;">CFPI INFLATION</span><br>
+            <span style="font-size: 10px;font-family: 'Open Sans';color:#000000;">{{kpis['cfpi']['context']}}</span>
+            </div>
+             <div style="display: inline-block;
+             width: 220px;
+             height: 8em;
+             background-color: #FFAA00;
+             text-align: center;
+             position: relative;
+             top: -2.8em;right:65px">
+                <span style="font-size: 24px;font-family: 'Open Sans';color:#fff;font-weight: bold;">{{kpis['export_quantity']['value']}}</span><br>
+                <span style="font-size: 12px;font-family: 'Open Sans';color:#fff;">{{kpis['export_quantity']['uom']}}</span><br>
+                <span style="font-size: 12px;font-family: 'Open Sans';color:#000000;font-weight: bold;">EXPORTS</span><br>
+                <span style="font-size: 10px;font-family: 'Open Sans';color:#000000;">{{kpis['export_quantity']['context']}}</span>
+            </div>
+                
+                
+            </div>
+    </div>
+    <div style="width: 75%;
+    background-color: #EAEAEA;
+    padding: 10px 0px 10px 320px;
+    margin-top: -12em;">
+        <span style="font-size: 16px;
+        color: #000000;">{{crop_info}}</span>
+    </div>
+        <div style="width:100%;padding:10px;margin-top: -10px;">
+            <div style="display: inline-block;margin-right:10px;width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_1']['title']}}</p>
+                <div style="margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">{{graphs['chart_1']['sub_title']}}</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_1']['production_status']}}</p>
+                    <p style="font-size: 9px;font-weight: 800;color:#000000; display: inline-block;">{{graphs['chart_1']['percentage_change']}}<br>
+                        <span style="font-size: 9px;color: #4B4B4B;">{{graphs['chart_1']['UOM']}}</span></p>
+                </div>
+                {{graphs['chart_1']['chart']}}
+            </div>
+            <div style="display: inline-block; margin-right:10px;    width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_2']['title']}}</p>
+                <div style="margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">{{graphs['chart_2']['sub_title']}}</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_2']['comparision_status']}}</p>
+                    <p style="font-size: 9px;font-weight: 600;color:#000000;display: inline-block;">{{graphs['chart_2']['percentage_change']}}<br><span
+                            style="font-size: 9px;color: #4B4B4B;">{{graphs['chart_2']['UOM']}}</span></p>
+                </div>
+                {{graphs['chart_2']['chart']}}
+            </div>
+            <div style="display: inline-block;   margin-left:1px;         width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_3']['title']}}</p>
+                <div style=" margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">{{graphs['chart_3']['published_date']}}</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_3']['procured_image']}}</p>
+                    <p style="font-size: 9px;font-weight: 800;color:#000000;display: inline-block;">{{graphs['chart_3']['Procured_value']}}<br></p>
+                      <!-- <span style="font-size: 9px;color: #4B4B4B;">CAGR</span></p> -->
+                </div>
+                {{graphs['chart_3']['chart']}}
+            </div>
+        </div>
+        <div style="width:100%;padding:10px;margin-top: -10px; ">
+            <div style="display: inline-block;   margin-right:10px;  width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_4']['title']}}</p>
+                <div style=" margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">{{graphs['chart_4']['sub_title']}}</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_4']['wpi_status']}}</p>
+                    <p style="font-size: 9px;font-weight: 600;color:#000000;display: inline-block;">{{graphs['chart_4']['wpi_inflation']}}<br><span
+                            style="font-size: 9px;color: #4B4B4B;">{{graphs['chart_4']['wpi_description']}}</span></p>
+                </div>
+                {{graphs['chart_4']['chart']}}
+            </div>
+            <div style="display: inline-block;    margin-right:10px;         width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_5']['title']}}</p>
+                <div style=" margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">Not needed</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_5']['previous_comparision_status']}}</p>
+                    <p style="font-size: 9px;font-weight: 800;color:#000000;display: inline-block;">{{graphs['chart_5']['previous_value']}}<br><span
+                            style="font-size: 9px;color: #4B4B4B;">{{graphs['chart_5']['compared_to']}}</span></p>
+                </div>
+                {{graphs['chart_5']['chart']}}
+            </div>
+            <div style="display: inline-block;    margin-left:1px;        width: 32%;">
+                <p style="font-weight: 600;color:#322F2D;font-size: 16px;">{{graphs['chart_6']['title']}}</p>
+                <div style=" margin-top: -20px;">
+                    <p style="font-size: 12px;display: inline-block;">Not needed</p>
+                    <p style="padding:5px;display: inline-block;">{{graphs['chart_6']['comparision_status']}}</p>
+                    <p style="font-size: 9px;font-weight: 600;color:#000000;display: inline-block;">{{graphs['chart_6']['percentage_change']}}<br><span
+                            style="font-size: 9px;color: #4B4B4B;">{{graphs['chart_6']['compared_to']}}</span></p>
+                </div>
+                {{graphs['chart_6']['chart']}}
+            </div>
+        </div>
+        <p
+            style="color: #093F7C;font-size: 20px;font-weight: 600;padding:10px">
+            International Perspective</p>
+        <div style="font-size:16px;padding: 10px;margin-top:-2em"> {{International_Perspective}} </div>
+        <div style="
+        position: relative;
+        top: -25em;">
+        <img src="img/footer_image.png" style="
+    position: relative;
+    z-index: -1;
+    width: 100%;"></img>
+        <img src="img/qr.png" style="
+    position: relative;
+    z-index: 999;
+    right: -3em;
+    bottom: 10em;
+" />
+</div>
+<!-- </div> -->
+
+<div style="float: right;opacity: 0.8; padding-bottom: 20px;    position: relative;
+top: -24em;
+"><img src="img/header_img.png" style="bottom: 20px;
+    position: relative;"/></div>
+<div style="margin-top:50px;width:50px"></div>
+<div style="background-color: #04a271;text-align: center;font-size: 18px; font-weight: 600;color:#fff;margin-top: -20em;">Commodity Report: Rice</div>
+<div style="background-color: #edb636;text-align: center;font-size: 16px;color:#000000">Key parameters on commodity situation are discussed below</div>
+<p style="font-size: 18px;color:#c45911;font-weight: 600;">{{graphs['chart_7']['header']}}</p>
+<p style="color:#000000;font-size: 16px;">{{graphs['chart_7']['description']}}</p>
+    <p style="font-size: 16px;
+    color: #093f7c;
+    font-weight: 600;
+    margin-top: 11px;">{{graphs['chart_7']['title']}}</p>
+    <div style="    border: 1px solid #deeaf6;
+    width: 100%;
+    height: 11em;">
+    <img src="img/cc_table.png" style="position: relative;
+    top: -12em;"/>
+<p style="font-size: 14px;
+font-style: italic;
+color: #000000;
+position: relative;
+top: -14em;">{{graphs['chart_7']['source_details']}}</p></div>
+<p style="font-size: 18px;
+color: #c45911;
+font-weight: 600;
+margin-top: 3em;">{{graphs['chart_8']['header']}}</p>
+<p style="color:#000000;font-size: 16px;">{{graphs['chart_8']['description']}}</p>
+<p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top: 20px;margin-bottom: 20px;">{{graphs['chart_8']['title']}}</p>
+<div style="border:1px solid #deeaf6;width: 100%;">
+  {{graphs['chart_8']['chart']}}</div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;">{{graphs['chart_8']['source_details']}}</p></div>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 1: Top 5 Rice Producing States, 2023-24* (Production in LMTs)</p>
+    <table style="width:100%">
+        <tr style="font-weight: 700;">
+          {% for key in tables['table_1']['data']|first %}
+            <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+          {% endfor %}
+        </tr>
+        {% for item in tables['table_1']['data'] %}
+        {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+        <tr class="{{ row_class }}">
+          {% for key, value in item.items() %}
+            <td style="color:#000000" class="c2">{{ value }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>    
+  
+      <p style="font-size: 14px;font-style: italic;color:#000000;">*Values from 2023-24 are from 2nd Advance Estimate, Kharif & Rabi (excluding summer). For previous years summer is included</p>
+      <p style="font-size: 14px;font-style: italic;color:#000000;page-break-after: always;margin-bottom: 0px;">Source: DA&FW</p>
+
+      
+      <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+    <div style="margin-top: 50px !important;display: inline-block;">
+    <p style="font-size: 18px;color:#c45911;font-weight: 600;margin-top: 20px;">{{graphs['chart_9']['header']}}</p>
+    <p style="color:#000000;font-size: 16px;">{{graphs['chart_9']['description']}}</p></div>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top: 20px;margin-bottom: 20px;">{{graphs['chart_9']['title']}}</p>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_9']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-bottom: 50px;">{{graphs['chart_9']['source_details']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 1: Top 5 Rice Producing States, 2023-24* (Production in LMTs)</p>
+    
+    <table style="width:100%">
+      <tr style="font-weight: 700;">
+        {% for key in tables['table_2']['data']|first %}
+          <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+        {% endfor %}
+      </tr>
+      {% for item in tables['table_2']['data'] %}
+      {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+      <tr class="{{ row_class }}">
+        {% for key, value in item.items() %}
+          <td style="color:#000000" class="c2">{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+  </table>   
+    
+    
+    
+      <p style="font-size: 14px;font-style: italic;color:#000000;page-break-after: always;">Source: CWWG & DA&FW</p>
+
+
+
+      <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+    <div style="margin-top: 50px !important;display: inline-block;">
+    <p style="font-size: 18px;color:#c45911;font-weight: 600;margin-top: 20px;">{{graphs['chart_10']['header']}}</p>
+    <p style="color:#000000;font-size: 16px;">{{graphs['chart_10']['description']}}</p></div>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top: 20px;margin-bottom: 20px;">{{graphs['chart_10']['title']}}</p>
+    <div style="border:1px solid #deeaf6;width: 50%;">
+      {{graphs['chart_10']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-bottom: 50px;">{{graphs['chart_10']['source_details']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 3: All India Rice Procurement (LMT),2023-24</p>
+    <table style="width:100%">
+      <tr style="font-weight: 700;">
+        {% for key in tables['table_3']['data']|first %}
+          <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+        {% endfor %}
+      </tr>
+      {% for item in tables['table_3']['data'] %}
+      {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+      <tr class="{{ row_class }}">
+        {% for key, value in item.items() %}
+          <td style="color:#000000" class="c2">{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+  </table>   
+    
+      <p style="font-size: 14px;font-style: italic;color:#000000;">Source: FCI</p>
+
+      <p style="font-size: 18px;color:#c45911;font-weight: 600;margin-top: 20px;">{{graphs['chart_11']['header']}}</p>
+      <p><span style="font-size: 16px;color:#093f7c;font-weight: 600;">{{graphs['chart_11']['description']}}</p>
+
+      <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+   <div style="margin-top: 40px !important;display: inline-block;">
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:0px">{{graphs['chart_11']['title']}}</p></div>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_11']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-top: 0px;">{{graphs['chart_11']['source_details']}}</p>
+    
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:0px">{{graphs['chart_12']['title']}}</p>
+    <p>{{graphs['chart_12']['title_description']}}</p>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_12']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-top: 0px;">{{graphs['chart_12']['source_details']}}</p>
+
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:0px">{{graphs['chart_13']['title']}} </p>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_13']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-top: 0px;;page-break-after: always;">{{graphs['chart_13']['source_details']}}</p>
+
+
+    <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+   <div style="margin-top: 80px !important;display: inline-block;">
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 4: Paddy: Mandi Arrival Quantity (Th MT) of Top Mandis of the Zones</p></div>
+    
+    <table style="width:100%">
+      <tr style="font-weight: 700;">
+        {% for key in tables['table_4']['data']|first %}
+          <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+        {% endfor %}
+      </tr>
+      {% for item in tables['table_4']['data'] %}
+      {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+      <tr class="{{ row_class }}">
+        {% for key, value in item.items() %}
+          <td style="color:#000000" class="c2">{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+  </table>   
+    
+    
+    
+    
+      <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">{{graphs['chart_14']['title']}}</p>
+      <div style="border:1px solid #deeaf6;width: 100%;">
+        {{graphs['chart_14']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-bottom: 40px;">{{graphs['chart_14']['source_details']}}</p>
+    <p style="font-size: 16px;color:#c45911;font-weight: 600;margin-top: 20px;">{{graphs['chart_15']['header']}}</p>
+    <p><span style="font-size: 16px;color:#093f7c;font-weight: 600;">{{graphs['chart_15']['description']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">{{graphs['chart_15']['title']}}</p>
+    <div style="display: block;page-break-after: always;">
+        <div style="width: 48%; display: inline-block;">
+          {{graphs['chart_15']['chart']}}
+            <div style="font-size: 14px; font-style: italic; color: #000000;">{{graphs['chart_15']['source_details']}}</div>
+        </div>
+        <div style="width: 48%; display: inline-block;">
+          {{graphs['chart_16']['chart']}}
+            <div style="font-size: 14px; font-style: italic; color: #000000;">{{graphs['chart_16']['source_details']}}</div>
+        </div>
+    </div>
+    
+
+
+    <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+   <div style="margin-top: 70px !important;display: inline-block;">
+    <p style="font-size: 18px;color:#c45911;font-weight: 600;margin-top: 20px;">{{graphs['chart_17']['header']}}</p></div>
+    <p><span style="font-size: 16px;color:#093f7c;font-weight: 600;">{{graphs['chart_17']['description']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">{{graphs['chart_17']['title']}}</p>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_17']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-bottom: 40px;">{{graphs['chart_17']['source_details']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">{{graphs['chart_18']['title']}}</p>
+    <div style="border:1px solid #deeaf6;width: 100%;">
+      {{graphs['chart_18']['chart']}}
+    </div>
+    <p style="font-size: 14px;font-style: italic;color:#000000;margin-bottom: 40px;">{{graphs['chart_18']['source_details']}}</p>
+    <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 5: HS Code wise Indian Rice Export Quantity (LMTs), **2023-24</p>
+    
+    <table style="width:100%">
+      <tr style="font-weight: 700;">
+        {% for key in tables['table_5']['data']|first %}
+          <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+        {% endfor %}
+      </tr>
+      {% for item in tables['table_5']['data'] %}
+      {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+      <tr class="{{ row_class }}">
+        {% for key, value in item.items() %}
+          <td style="color:#000000" class="c2">{{ value }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+  </table>   
+    
+      <p style="font-size: 14px;font-style: italic;color:#000000;page-break-after: always;">**Values for FY 2023-2024 are from Apr to Dec 2023</p>
+
+
+
+
+
+
+
+      <div style="float: right;opacity: 0.8; "><img src="img/header_img.png" style="top: 20px;
+        position: relative;"/></div>
+
+
+   <div style="margin-top: 70px !important;display: inline-block;"></div>
+      <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 6: Rice Export Quantity in Lakh Tonnes & Value in Million USD to World</p>
+      <p>Total quantity exported in current month is lowe by 42.13% as compared to the previous year same month</p>
+      <table style="width:100%">
+        <tr style="font-weight: 700;">
+          {% for key in tables['table_6']['data']|first %}
+            <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+          {% endfor %}
+        </tr>
+        {% for item in tables['table_6']['data'] %}
+        {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+        <tr class="{{ row_class }}">
+          {% for key, value in item.items() %}
+            <td style="color:#000000" class="c2">{{ value }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>   
+      
+        <p style="font-size: 14px;font-style: italic;color:#000000;">Source: DGCIS<br>
+            **Values for FY 2023-2024 are from Apr to Dec 2023
+            </p>
+
+            <p style="font-size: 16px;color:#093f7c;font-weight: 600;margin-top:20px">Table 7: EXIM Policy</p>
+            <table style="width:100%">
+              <tr style="font-weight: 700;">
+                {% for key in tables['table_7']['data']|first %}
+                  <th style="background-color: #093c76;color: #fff" class="c2">{{ key }}</th>
+                {% endfor %}
+              </tr>
+              {% for item in tables['table_7']['data'] %}
+              {% set row_class = 'odd-row' if loop.index is odd else 'even-row' %}
+              <tr class="{{ row_class }}">
+                {% for key, value in item.items() %}
+                  <td style="color:#000000" class="c2">{{ value }}</td>
+                {% endfor %}
+              </tr>
+              {% endfor %}
+          </table>   
+            
+            
+            
+            
+              <p style="font-size: 14px;font-style: italic;color:#000000;"><a href="" target="_blank" >https://www.dgft.gov.in/CP/?opt=notification</a></p>
+              <p style="font-size: 18px;color:#c45911;font-weight: 600;">{{News['News']}}</p>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 100px); gap: 10px;">
+                <div style=" padding: 20px; text-align: center;">{{News['0']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['1']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['2']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['3']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['4']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['5']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['6']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['7']}}</div>
+                <div style=" padding: 20px; text-align: center;">{{News['8']}}</div>
+            </div>
+            
+            </div>
+            
+</body>
+
+</html>
